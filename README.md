@@ -23,10 +23,10 @@ Este proyecto proporciona una configuración optimizada para **NGINX** que inclu
 ### 📋 Configuración básica
 
 Esta configuración ajusta el número de **procesos de trabajo** y optimiza el manejo de conexiones:
-``
+```nginx
 user nginx;
 worker_processes auto;  # Ajusta automáticamente según el número de CPU
-worker_rlimit_nofile 8192;  # Limitar el número de archivos abiertos``
+worker_rlimit_nofile 8192;  # Limitar el número de archivos abiertos```
 
 ⚙️ Eventos optimizados
 Utiliza el método epoll para un manejo eficiente de las conexiones en sistemas Linux:
