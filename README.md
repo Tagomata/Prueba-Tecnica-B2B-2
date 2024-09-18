@@ -91,29 +91,29 @@ gzip_types text/plain text/css application/json application/javascript text/xml 
 ```
 
 
-🔧 Instrucciones de instalación
-Clona el repositorio:
+**🔧 Instrucciones de instalación**
+1. Clona el repositorio:
 ```bash
 git clone https://github.com/Tagomata/Prueba-Tecnica-B2B-2.git
 cd Prueba-Tecnica-B2B-2
 ```
-Asegúrate de que tu entorno de NGINX esté instalado y configurado correctamente. Para instalar NGINX, usa el siguiente comando en distribuciones basadas en Ubuntu:
 
+2. Asegúrate de que tu entorno de NGINX esté instalado y configurado correctamente. Para instalar NGINX, usa el siguiente comando en distribuciones basadas en Ubuntu:
 ```bash
 sudo apt-get install nginx
 ```
-Reemplaza los certificados SSL en el directorio ssl/ con tus propios certificados.
 
-Copia el archivo nginx.conf al directorio de configuración de NGINX:
+3. Reemplaza los certificados SSL en el directorio ssl/ con tus propios certificados.
+
+4. Copia el archivo nginx.conf al directorio de configuración de NGINX:
 ```bash
 sudo cp nginx.conf /etc/nginx/nginx.conf
 ```
 
-Reinicia NGINX para aplicar la nueva configuración:
+5. Reinicia NGINX para aplicar la nueva configuración:
 ```bash
 sudo systemctl restart nginx
 ```
-
 
 🎯 Buenas prácticas incluidas
 - Auto-ajuste de workers: El número de procesos de trabajo se ajusta automáticamente al número de núcleos de CPU disponibles en tu máquina.
